@@ -17,9 +17,7 @@ def get_random_item(myList):
 print(get_random_item(quotes))
 # Ask user to hit "enter" for another citation and "b" to exit  
 user_answer= input("hit 'enter' for another citation and 'B' to exit \n ")
-if user_answer== "B":
- 	# exit program	
- 	pass 
-else:
-	#display anoter randomly choosen quote 
+while user_answer!= "B": 
 	print(get_random_item(quotes))
+	user_answer= input("hit 'enter' for another citation and 'B' to exit \n ")
+
